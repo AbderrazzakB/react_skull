@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import './assets/css/components/app';
+// @import './assets/css/components/app';
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-
-html,body{
-  font-family: 'Russo One', sans-serif;
+html,
+body {
+  font-family: "Lato", sans-serif;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #333333;
 }
 
-*{
-  &:focus{
+* {
+  &:focus {
     outline: none;
   }
 }

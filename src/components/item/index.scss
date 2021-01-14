@@ -1,0 +1,68 @@
+.item {
+  width: 305px;
+  height: 483px;
+  background-color: #2ec5a41a;
+  border-radius: 20px;
+  display: inline-block;
+
+  &-head {
+    display: flex;
+    align-items: center;
+    margin: 11px 37px;
+  }
+
+  &-avatar {
+    width: 37px;
+    height: 37px;
+    object-fit: contain;
+    border-radius: 9999px;
+  }
+
+  &-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 12px;
+  }
+
+  &-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    img {
+      width: 270px;
+      height: 335px;
+    }
+    .bookmark {
+      position: absolute;
+      bottom: 0;
+      left: 45px;
+    }
+
+    .love {
+      position: absolute;
+      bottom: 0;
+      right: 46px;
+    }
+  }
+
+  &-footer {
+    margin: 11px 37px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-prix {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  &-size {
+    font-size: 12px;
+    color: #2ec5a4;
+  }
+  &-description {
+    font-size: 14px;
+    color: #3d4142;
+  }
+}
