@@ -2,6 +2,7 @@ import React from "react";
 import Image from "../../assets/images/Mask-Group-3.png";
 import Avatar from "../../assets/images/avatar.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart, faBookmark } from "@fortawesome/free-regular-svg-icons";
 import "./index.scss";
 function Item() {
   return (
@@ -12,14 +13,14 @@ function Item() {
       </div>
       <div className="item-image">
         <img src={Image} alt="shu" />
-        <div className="bookmark">
-          <FontAwesomeIcon icon="bookmark" />
+        <button className="bookmark">
+          <FontAwesomeIcon icon={faBookmark} />
           <span>775</span>
-        </div>
-        <div className="love">
-          <FontAwesomeIcon icon="heart" />
+        </button>
+        <button className="love">
+          <FontAwesomeIcon icon={faHeart} />
           <span>93</span>
-        </div>
+        </button>
       </div>
       <div className="item-footer">
         <span className="item-prix">99 MAD</span>

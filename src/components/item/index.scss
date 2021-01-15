@@ -34,15 +34,24 @@
       width: 270px;
       height: 335px;
     }
-    .bookmark {
+
+    button {
       position: absolute;
-      bottom: 0;
+      bottom: 26px;
+      padding: 4px;
+      background: none;
+      border: none;
+      color: white;
+      span {
+        margin-inline: 0.5rem;
+      }
+    }
+
+    .bookmark {
       left: 45px;
     }
 
     .love {
-      position: absolute;
-      bottom: 0;
       right: 46px;
     }
   }
