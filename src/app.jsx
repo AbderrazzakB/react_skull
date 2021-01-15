@@ -1,10 +1,10 @@
 import React from "react";
-import Item from "./components/item/Item.jsx";
+import Card from "./components/item/Card.jsx";
 
 const app = () => {
   return (
     <div style={{ margin: "2rem" }}>
-      <Item />
+      <Card />
     </div>
   );
 };
