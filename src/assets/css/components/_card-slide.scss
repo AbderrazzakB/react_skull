@@ -1,0 +1,88 @@
+.slide {
+  border: 1px solid #2ec5a4;
+  border-radius: 17px;
+  max-width: 1573px;
+  width: 100%;
+
+  &-head {
+    margin: 42px 65px 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-profile {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 72px;
+      height: 72px;
+      border-radius: 9999px;
+    }
+
+    > div {
+      margin-left: 24px;
+    }
+
+    .username {
+      color: #3d4142;
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .rate {
+      color: #2ec5a4;
+    }
+
+    .follow {
+      width: 150px;
+      height: 45px;
+      background: #2ec5a4 0% 0% no-repeat padding-box;
+      border-radius: 23px;
+      opacity: 1;
+      border: none;
+      font-size: 16px;
+      color: white;
+      margin-left: 59px;
+    }
+
+    .menu {
+      width: 45px;
+      height: 45px;
+      background: #2ec5a440 0% 0% no-repeat padding-box;
+      color: white;
+      border-radius: 9999px;
+      border: none;
+      margin-left: 10px;
+    }
+  }
+
+  &-navigate {
+    button {
+      background-color: #2ec5a4;
+      border: none;
+      height: 41px;
+      width: 41px;
+      border-radius: 8px;
+      color: white;
+    }
+
+    button + button {
+      margin-left: 11px;
+    }
+  }
+
+  &-cards {
+    padding: 0px 45px;
+    display: flex;
+    gap: 14px;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
