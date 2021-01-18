@@ -8,15 +8,15 @@ module.exports = merge(common, {
 
   devServer: {
     host: "0.0.0.0",
-    port: 3004,
+    port: 3000,
     open: false,
     contentBase: path.join(__dirname, "assets"),
-    historyApiFallback: true
+    historyApiFallback: true,
   },
 
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "assets/js/[name].js"
+    filename: "assets/js/[name].js",
   },
 
   module: {
@@ -27,8 +27,8 @@ module.exports = merge(common, {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              esModule: false
-            }
+              esModule: false,
+            },
           },
           "css-loader",
           {
@@ -36,19 +36,19 @@ module.exports = merge(common, {
             options: {
               sourceMap: true,
               config: {
-                path: "postcss.config.js"
-              }
-            }
+                path: "postcss.config.js",
+              },
+            },
           },
-          "sass-loader"
-        ]
-      }
-    ]
+          "sass-loader",
+        ],
+      },
+    ],
   },
 
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "assets/css/[name].css"
-    })
-  ]
+      filename: "assets/css/[name].css",
+    }),
+  ],
 });

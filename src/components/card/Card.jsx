@@ -7,11 +7,12 @@ import { faHeart, faBookmark } from "@fortawesome/free-regular-svg-icons";
 function Card() {
   return (
     <div className="card">
-      <div className="card-head">
-        <img src={Avatar} alt="avatar" srcSet="" className="card-avatar" />
-        <span className="card-title">Perledelune</span>
+      <div className="head">
+        <img src={Avatar} alt="avatar" srcSet="" className="avatar" />
+        <span className="title">Perledelune</span>
       </div>
-      <div className="card-image">
+
+      <div className="image">
         <img src={Image} alt="shu" />
         <button className="bookmark">
           <FontAwesomeIcon icon={faBookmark} />
@@ -22,10 +23,11 @@ function Card() {
           <span>93</span>
         </button>
       </div>
-      <div className="card-footer">
-        <span className="card-prix">99 MAD</span>
-        <span className="card-size">X5/34/6</span>
-        <span className="card-description">Loavies</span>
+
+      <div className="footer">
+        <span className="prix">99 MAD</span>
+        <span className="size">X5/34/6</span>
+        <span className="description">Loavies</span>
       </div>
     </div>
   );

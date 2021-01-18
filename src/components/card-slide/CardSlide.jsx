@@ -12,25 +12,30 @@ import {
 export const CardSlide = () => {
   return (
     <div className="slide">
-      <div className="slide-head">
-        <div className="slide-profile">
-          <img src={Avatar} alt="avatar" srcSet="" />
-          <div>
-            <div className="username">Sasha22</div>
-            <div className="rate">
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
+      <div className="head">
+        <div className="profile">
+          <div className="title">
+            <img src={Avatar} alt="avatar" srcSet="" />
+            <div>
+              <div className="username">Sasha22</div>
+              <div className="rate">
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
             </div>
           </div>
-          <button className="follow">Suivre</button>
-          <button className="menu">
-            <FontAwesomeIcon icon={faEllipsisH} />
-          </button>
+
+          <div className="menu">
+            <button className="follow">Suivre</button>
+            <button className="menu">
+              <FontAwesomeIcon icon={faEllipsisH} />
+            </button>
+          </div>
         </div>
-        <div className="slide-navigate">
+        <div className="navigate">
           <button>
             <FontAwesomeIcon icon={faChevronLeft} />
           </button>
@@ -39,7 +44,7 @@ export const CardSlide = () => {
           </button>
         </div>
       </div>
-      <div className="slide-cards">
+      <div className="cards">
         <Card />
         <Card />
         <Card />
