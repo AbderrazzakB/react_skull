@@ -2,7 +2,7 @@
   border: 1px solid #2ec5a4;
   border-radius: 17px;
   max-width: 1573px;
-  width: 100%;
+  margin: 1rem;
 
   > .head {
     margin: 42px 65px 38px;
@@ -104,10 +104,14 @@
   }
 
   .cards {
-    padding: 0px 45px;
+    padding: 10px 45px;
     display: flex;
     scroll-behavior: smooth;
     overflow-y: hidden;
+
+    @media (max-width: 992px) {
+      padding: 10px 1rem;
+    }
 
     div + div {
       margin-inline: 1rem;

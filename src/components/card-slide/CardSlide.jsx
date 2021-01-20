@@ -48,13 +48,6 @@ export const CardSlide = () => {
         <Card />
         <Card />
         <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
       </div>
     </div>
   );
