@@ -1,10 +1,12 @@
 import React from "react";
 import { CardSlide } from "./components/card-slide/CardSlide.jsx";
+import { Footer } from "./components/footer/Footer.jsx";
 
 const app = () => {
   return (
-    <div style={{ margin: "2rem" }}>
+    <div>
       <CardSlide />
+      <Footer />
     </div>
   );
 };
