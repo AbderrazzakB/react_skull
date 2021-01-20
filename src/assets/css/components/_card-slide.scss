@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 900px) {
+    @media (max-width: 768px) {
       justify-content: center;
     }
 
@@ -18,7 +18,7 @@
       display: flex;
       align-items: center;
 
-      @media (max-width: 900px) {
+      @media (max-width: 768px) {
         flex-direction: column;
       }
 
@@ -50,7 +50,7 @@
       .menu {
         margin-left: 24px;
 
-        @media (max-width: 900px) {
+        @media (max-width: 768px) {
           margin: auto;
           margin-top: 4px;
         }
@@ -66,7 +66,7 @@
           color: white;
           margin-left: 59px;
 
-          @media (max-width: 900px) {
+          @media (max-width: 768px) {
             margin-left: auto;
           }
         }
@@ -97,8 +97,7 @@
         margin-left: 11px;
       }
 
-      @media (max-width: 900px) {
-        position: absolute;
+      @media (max-width: 992px) {
         display: none;
       }
     }
